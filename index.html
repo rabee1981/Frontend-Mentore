@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Kumbh Sans';
+    }
+    .container {
+      margin:0 auto;
+      width: 1440px;
+      height: 720px;
+      background-color: hsl(185, 75%, 39%);
+      overflow: hidden;
+    }
+    .bg {
+      position: relative;
+
+    }
+    .top {
+      left: -20%;
+      top: -70%;
+    }
+    .bottom {
+      right: -48%;
+      top: -83%;
+    }
+    .card {
+      position: absolute;
+      width: 350px;
+      height: 375px;
+      top: 170px;
+      left: 50%;
+      margin-left: -175px;
+      border-radius: 5%;
+      overflow: hidden;
+    }
+    .card {
+      z-index: 1000;
+    }
+    .card img {
+      position: absolute;
+      border-radius: 50%;
+      border: 5px solid white;
+      top: 87px;
+      left: 127px;
+    }
+    .card-top {
+      height: 140px;
+      background-image: url("./images/bg-pattern-card.svg");
+    }
+    .card-bottom {
+      height: 235px;
+      width: 100%;
+      background-color:#FFF;
+      opacity: 1;
+      padding-top: 70px;
+    }
+    p {
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 10px;
+      font-weight: 700;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 0.5;
+    }
+    .counters {
+      border-top: 2px solid rgba(0, 0, 0, .1);
+      height: 90px;
+      padding: 20px;
+      margin-top: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-flow: row wrap;
+
+    }
+    .container  div {
+      flex-basis: 33%;
+    }
+    .counters p {
+      padding-bottom: 5px;
+    }
+    .counters .top p {
+      font-size: 20px;
+    }
+    .counters .bottom  p{
+      font-size: 13px;
+      color: rgba(0, 0, 0, .3);;
+    }
+    @media only screen and (max-width: 375px) {
+      .container {
+      margin:0 auto;
+      width: 375px;
+      height: 720px;
+      background-color: hsl(185, 75%, 39%);
+      overflow: hidden;
+    }
+    .top {
+      left: -201%;
+      top: -80%;
+    }
+    .bottom {
+      right: -40%;
+      top: -95%;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="./images/image-victor.jpg" alt="">
+      <div class="card-top"> 
+      </div>
+      <div class="card-bottom">
+        <p>Victor Crest <span style="padding-left: 5px;">26</span></p>
+        <p style="opacity: 0.5;font-weight: 400;">London</p>
+        <div class="counters">
+          <div class="top">
+            <p>80K</p>
+          </div>
+          <div class="top">
+            <p>803K</p>
+          </div>
+          <div class="top">
+            <p>1.4K</p>
+          </div>
+          <div class="bottom"><p>Followers</p></div>
+          <div class="bottom"><p>Likes</p></div>
+          <div class="bottom"><p>Photos</p></div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/bg-pattern-top.svg" class="bg top">
+    <img src="./images/bg-pattern-bottom.svg" class="bg bottom">
+  </div>
+</body>
+</html>
